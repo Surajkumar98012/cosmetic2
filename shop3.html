@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="searchbar.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+  <script type="text/javascript">
+    function hy(){
+      document.getElementById("hello").src="shop35.jpg";
+
+    }
+    function hy1(){
+document.getElementById("hello").src="shop3.jpg"
+    }
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}    
+  </script>
+  <style type="text/css">
+     body{
+      background-color: #ff99CC;
+      background-image: linear-gradient(-90deg,#FF1493,#00BFFF);
+    }
+
+    .yo{
+      background-color: #D0D0D0;
+      background-image: linear-gradient(#D0D0D0,#FF66CC);
+      font-family:  'Satisfy', cursive;
+      text-shadow: 4px 4px 5px yellow;
+    }
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position:absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:pink;
+  opacity: 0.95;
+  overflow-x: hidden;
+  box-shadow: black 3px 3px 6px;
+  transition: 0.5s;
+  margin-top: 200px;
+  padding-top: 50px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding-top: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.container1 {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: pink;
+  overflow: hidden;
+  width: 200px;
+  height:0;
+  transition: .5s ease;
+  opacity: 0.85;
+}
+
+.container1:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: black;
+  font-size: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+  .sh1{
+    text-shadow: 3px 3px 3px red;
+  }
+
+  .sh2{
+    text-shadow: 3px 3px 4px blue;
+    }
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 80%;
+    margin: auto;
+  }
+  .sh3{
+    text-shadow: 3px 3px 3px yellow;
+  }
+
+  </style>
+  
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:rgba(255,255,255,0.3);margin-top: -10px;" >
+        <div class="col-md-1"></div>
+          <a style="font-size: 28px;font-family: curlz MT; font-weight: bolder;color: indigo;" class="navbar-brand" href="#" >OWNSHOP</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="navbar-toggler-icon"></div>
+  </button>
+    
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style="padding-top: 8px;">
+    <ul class="navbar-nav">
+
+         
+
+
+         <li class="nav-item active">
+        <a style="color: white" class="nav-link" href="#">
+
+          <div id="wrap">
+        <form action="" autocomplete="on">
+        <input id="search" name="search" type="text" placeholder="Looking For Something ?"><input id="search_submit" value="Rechercher" type="submit">
+        </form>
+      </div>
+
+
+          <!-- <span class="sr-only">(current)</span> --></a>
+      </li> 
+
+
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Get the app <!-- <span class="sr-only">(current)</span> --></a>
+      </li>
+
+
+     
+<div class="dropdown">
+  <button  class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Support
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Feedback</a>
+    <a class="dropdown-item" href="#">Helpcenter</a>
+    <a class="dropdown-item" href="#">Message Us</a>
+  </div>
+</div>
+
+
+  
+      <li class="nav-item">
+        <!-- <a href="#">Disabled</a> -->
+        <a class="nav-link disabled"  href="#"><span style="border:1px solid red;padding: 8px;color: red;"> Sign in </span></a>
+      </li>
+          <button type="button" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#myModal">Sign Up</button>
+    </ul>
+    
+  </div>
+ 
+
+
+</nav>
+
+   
+       <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h5 class="modal-title" style="color: red;padding-left: 50px;">Create Your Account</h5>
+          
+      
+        </div>
+        <h6 style="font-size: 14px;">Set up an account today and start receiving exclusive deals and discounts reserved only for you!<h6>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div style="border:1px solid black;padding-top: 10px;padding-left: 60px;">
+                    <img  class="img-fluid" src="1.png">
+                    <p style="margin-top: -20px;margin-left: -50px; text-align: center;"> Sign in with Google</p>
+            </div>
+            <br/>
+            <div style="border:1px solid black;padding-top: 10px;padding-left: 60px;background-color: rgb(59,89,152);">
+                    <img  class="img-fluid" src="2.png">
+                    <p style="margin-top: -20px;margin-left: -50px;color: white;text-align: center;"> Sign in with Facebook</p>
+            </div>
+              </div>
+              <hr>
+              <h6 style="text-align: center;color: grey;">or register with E-mail:</h6>
+            
+                <form action="/action_page.php">
+                    <div class="form-group">
+    
+      <input type="email" class="form-control" id="name" placeholder="Enter First Name" name="Firstname">
+    </div>
+      <div class="form-group">
+    
+      <input type="email" class="form-control" id="name" placeholder="Enter Last Name" name="Lastname">
+    </div>
+    <div class="form-group">
+    
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+    
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+     <div class="form-group">
+    
+      <input type="password" class="form-control" id="pwd" placeholder="Confirm password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button style="margin-left: 110px;" type="submit" class="btn btn-success">Create Account</button>
+  </form>
+         </div>
+
+         <div class="col-md-6"style="background-image: url(11.jpg);padding-top: 120px;">
+          <img style="margin-left: 150px;" src="3.png">
+          <h4 style="text-align: center;font-weight: bold;">Signed-in<br> Member Get Excess To:</h4>
+          <br>
+          <ul style="font-weight: bold;">
+            <li>Thousands of Member-only deals</li>
+            <br>
+            <li>Lower prices</li>
+            <br>
+            <li>Faster Delivery</li>
+            <br>
+            <li>Amazing Offers</li>
+            <br>
+            <li>Upconing Deals</li>
+          </ul>
+         </div>
+            
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer" style="text-align: center;">
+          <h6 style=" font-size: 18px;">By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement.</h6>
+          <button style="align-items: center;" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+          
+          </div>
+         </div>
+        </div>
+		<br>
+		<br>
+
+
+
+<div class="container">
+  <div class="jumbotron yo text-center">
+    <h1><b><i class='fas fa-chess-queen' style='font-size:60px'></i>HER GRACE<i class='fas fa-chess-queen' style='font-size:60px'></i><b></b></h1>      
+  
+  </div>
+        
+</div>
+
+<br>
+<div id="mySidenav" class="sidenav fixed-top">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">TRENDING</a>
+  <a href="#">SALE</a>
+  <a href="#">LIPSTICKS</a>
+  <a href="#">FOUNDATIONS</a>
+  <a href="#">EYELINEAR</a>
+  <a href="#">BAGS</a>
+  <a href="#">PERFUMES</a>
+  <a href="#">SKINCARE</a>
+
+
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<br>
+
+</div>
+<br>
+   <div class="container-fluid" style="margin-top: 100px;">
+<div id="demo" class="carousel slide carousel-fade" data-ride="carousel" style="box-shadow: 0 0 13px; border-radius: 15px;">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+    <li data-target="#demo" data-slide-to="5"></li>
+    <li data-target="#demo" data-slide-to="6"></li>
+    <li data-target="#demo" data-slide-to="7"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="8.jpg" alt="image" width="100%" height="500" style="border-radius: 15px;">
+      <div class="carousel-caption" style="text-align: left;line-height: 35px;color: black;">
+        <p style="font-size: 72px;font-family: Calibri Light">INFINITE BEAUTY</p>
+        <p style="font-size: 33px;font-family: Blackadder ITC">Beauty is the ascription of a property or characteristic to an animal, idea, object, person or place that provides a perceptual experience of pleasure or satisfaction things.</p>
+         <a href="#" style="border:1px solid black;padding: 10px;padding-left:27px;padding-right: 27px; color:white;background-color: black;">View More</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="5.jpg" alt="image" width="100%" height="500" style="border-radius: 15px;">
+       <div class="carousel-caption" style="text-align: left;line-height: 35px;color:pink;">
+        <p style="font-size: 72px;font-family: Calibri Light">BEAUTY PRODUCT</p>
+        <p style="font-size: 33px;font-family: Blackadder ITC">Beauty is the ascription of a property or characteristic to an animal, idea, object, person or place that provides a perceptual experience of pleasure or satisfaction things.</p>
+         <a href="#" style="border:1px solid black;padding: 10px;padding-left:27px;padding-right: 27px; color:white;background-color:black;">View More</a>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        
+        <br>
+      </div>    
+    </div>
+    <div class="carousel-item">
+      <img src="2.jpg" alt="image" width="100%" height="500" style="border-radius: 15px;">
+       <div class="carousel-caption" style="text-align: left;line-height: 35px;color: black;">
+        <p style="font-size: 72px;font-family: Calibri Light">SUMMER LOOK</p>
+        <p style="font-size: 33px;font-family: Blackadder ITC">Beauty is the ascription of a property or characteristic to an animal, idea, object, person or place that provides a perceptual experience of pleasure or satisfaction things.</p>
+         <a href="#" style="border:1px solid black;padding: 10px;padding-left:27px;padding-right: 27px; color:white;background-color: black;">View More</a>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        
+        <br>
+      </div>   
+    </div><div class="carousel-item">
+      <img src="3.jpg" alt="image" width="100%" height="500" style="border-radius: 15px;">
+       <div class="carousel-caption" style="text-align: left;line-height: 35px;color: PINK;">
+        <p style="font-size: 72px;font-family: Calibri Light">ORIGINAL STYLE</p>
+        <p style="font-size: 33px;font-family: Blackadder ITC">Beauty is the ascription of a property or characteristic to an animal, idea, object, person or place that provides a perceptual experience of pleasure or satisfaction things.</p>
+         <a href="#" style="border:1px solid black;padding: 10px;padding-left:27px;padding-right: 27px; color:white;background-color: black;">View More</a>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        
+        <br>
+      </div>   
+    </div><div class="carousel-item">
+      <img src="4.jpg" alt="image" width="100%" height="500" style="border-radius: 15px;">
+     <div class="carousel-caption" style="text-align: left;line-height: 35px;color: black;">
+        <p style="font-size: 72px;font-family: Calibri Light">INFINITE BEAUTY</p>
+        <p style="font-size: 33px;font-family: Blackadder ITC">Beauty is the ascription of a property or characteristic to an animal, idea, object, person or place that provides a perceptual experience of pleasure or satisfaction things.</p>
+         <a href="#" style="border:1px solid black;padding: 10px;padding-left:27px;padding-right: 27px; color:white;background-color: black;">View More</a>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <br>
+        
+      </div>   
+    </div><div class="carousel-item">
+      <img src="7.jpg" alt="image" width="100%" height="500" style="border-radius: 15px;">
+     <div class="carousel-caption" style="text-align: left;line-height: 35px;color: pink;">
+        <p style="font-size: 72px;font-family: Calibri Light">SUMMER LOOK</p>
+        <p style="font-size: 33px;font-family: Blackadder ITC">Beauty is the ascription of a property or characteristic to an animal, idea, object, person or place that provides a perceptual experience of pleasure or satisfaction things.</p>
+         <a href="#" style="border:1px solid black;padding: 10px;padding-left:27px;padding-right: 27px; color:white;background-color: black;">View More</a>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        
+        <br>
+      </div>    
+    </div><div class="carousel-item">
+      <img src="6.jpg" alt="image" width="100%" height="500" style="border-radius: 15px;">
+       <div class="carousel-caption" style="text-align: left;line-height: 35px;color: black;">
+        <p style="font-size: 72px;font-family: Calibri Light">BEAUTY PRODUCT</p>
+        <p style="font-size: 33px;font-family: Blackadder ITC">Beauty is the ascription of a property or characteristic to an animal, idea, object, person or place that provides a perceptual experience of pleasure or satisfaction things.</p>
+         <a href="#" style="border:1px solid black;padding: 10px;padding-left:27px;padding-right: 27px; color:white;background-color: black;">View More</a>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        
+        <br>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="5.jpg" alt="image----" width="100%" height="500" style="border-radius: 15px;">
+       <div class="carousel-caption" style="text-align: left;line-height: 35px;color:pink;">
+        <p style="font-size: 72px;font-family: Calibri Light">ORIGINAL STYLE</p>
+        <p style="font-size: 33px;font-family: Blackadder ITC">Beauty is the ascription of a property or characteristic to an animal, idea, object, person or place that provides a perceptual experience of pleasure or satisfaction things.</p>
+         <a href="#" style="border:1px solid black;padding: 10px;padding-left:27px;padding-right: 27px; color:white;background-color: black;">View More</a>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <br>
+        
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+<br>
+<br>
+
+<h1 class="text-center sh3" style="color: black;"><u><b>Makeup is the Self confidence applied directly to your face.</b></u></h1>
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-2">
+  <img id="hello" onmouseover="hy()" onmouseout="hy1()" src="shop3.jpg ">
+</div></div></div>
+
+<br>
+<br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<h1 class="text-center text-gray-dark sh1"><b><u><marquee>ON TRENDING</marquee></u></b></h1>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+    <div class="col-sm-3">
+
+<div class="container1 ">
+  <img src="k2.jpg" alt="Avatar" class="image">
+  <div class="overlay ">
+    <div class="text">KAJAL
+      <p class="text-danger">$20.00</p></div></div>
+  </div>
+</div>
+<div class="col-sm-3">
+
+<div class="container1">
+  <img src="kit1.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">MAKEUP KIT
+      <p class="text-danger">$150.00</p></div></div>
+  </div>
+</div>
+<div class="col-sm-3">
+
+<div class="container1">
+  <img src="pur3.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">BAG
+      <p class="text-danger">$100.00</p></div></div>
+  </div>
+</div>
+<div class="col-sm-3">
+
+<div class="container1">
+  <img src="fond.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">FOUNDATIONS
+      <p class="text-danger">$120.00</p></div></div>
+  </div>
+</div>
+ </div></div>
+ <br>
+ <a href="#"><p class="text-center" style="color: black;"><i class='fas fa-hand-peace' style='font-size:30px'></i>SEE MANY MORE</p>
+ </a>
+ <hr>
+  <h1 class="text-center text-gray-dark sh2"><b><u><marquee>ON SALE</marquee></u></b></h1>
+  <br>
+  <br>
+  <div class="container">
+    <div class="row">
+    <div class="col-sm-3">
+
+<div class="container1 ">
+  <img src="lip1.jpg" alt="Avatar" class="image">
+  <div class="overlay ">
+    <div class="text">LIPSTICK
+      <p style="color: red">20% OFF</p></div></div>
+  </div>
+</div>
+<div class="col-sm-3">
+
+<div class="container1">
+  <img src="pur2.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">BAG
+     <p style="color: red">40% OFF</p> </div></div>
+  </div>
+</div>
+<div class="col-sm-3">
+
+<div class="container1">
+  <img src="b6.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">BLUSHERS
+       <p style="color: red">10% OFF</p> </div></div>
+  </div>
+</div>
+<div class="col-sm-3">
+
+<div class="container1">
+  <img src="kit2.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">MAKEUP KIT
+       <p style="color: red">60% OFF</p> </div></div>
+  </div>
+</div>
+ </div></div>
+  <a href="#"><p class="text-center" style="color: black;"><i class='fas fa-hand-peace' style='font-size:30px'></i>SEE MANY MORE</p>
+  <hr>
+
+  <br>
+  <br>
+  
+          <footer class="page-footer font-small indigo" style="margin-top: 55px;" >
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center" style="background-color:rgba(0,0,0,0.5);">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">imp Links</h5>
+
+        <ul class="list-unstyled" style="color: white;">
+            <li>
+            <a style="color: white;" href="#!">About US</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Contact Us</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Success story</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Services</a>
+          </li>
+          
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">Ownshop</h5>
+
+        <ul class="list-unstyled" style="color: white;">
+            <li>
+            <a style="color: white;" href="#!">Jobs</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Term & condition</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Privacy Policy</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Our parteners</a>
+          </li>
+        
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">Mazor Cities</h5>
+
+        <ul class="list-unstyled" style="color: white;">
+            <li>
+            <a style="color: white;" href="#!">Delhi</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Patna</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Amritsar</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Mumbai</a>
+          </li>
+        
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h3 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">Contact Detail</h3>
+
+
+                                
+                                
+                                <h5 style="color: black;" class="title-median">Ownshop Pvt. Ltd.</h5>
+                                <p><b style="color: black;">Email id:</b> <a style="color: black;" href="mailto:info@webenlance.com">srjrnw3@gmail.com</a></p>
+                               <!--  <p><b>Helpline Numbers </b> -->
+
+    <b style="color:#ffc106;">(8AM to 10PM):</b><p style="color: black;">  8130890090, +91-8130190010  </p>
+    
+    <!-- <p><b>Corp Office / Postal Address</b></p> -->
+    <!-- <p><b>Phone Numbers : </b>7042827160, </p>
+    <p> 011-27568832, 9868387223</p> -->
+                                
+
+       <!--  <ul class="list-unstyled">
+          <li>
+            <a style="color: white;" href="#!">Link 1</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Link 2</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Link 3</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Link 4</a>
+          </li>
+        </ul> -->
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background-color:rgba(0,0,0,0.7);color: black;">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/" style="color: white;">Ownshop.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+</body>
+</html>
